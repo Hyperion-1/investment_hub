@@ -1,7 +1,7 @@
 $silverMain: silver;
 $silver2: rgb(169, 166, 166);
 $silver3: rgb(144, 142, 142);
-$silver4: rgb(135, 134, 134);
+$silver4: rgb(130, 126, 126);
 $silver5: rgb(108, 108, 108);
 $silverTest: black;
 
@@ -12,6 +12,9 @@ $silverTest: black;
   .App-logo {
     height: 40vmin;
     pointer-events: none;
+
+    border-style: dashed;
+    border-color: red;
   }
   
   @media (prefers-reduced-motion: no-preference) {
@@ -20,11 +23,15 @@ $silverTest: black;
     }
   }
   
+
+
+
+
   .App-header {
    /* background-color: #282c34;*/
 
     /*FOR SILVER, TESTING*/
-   background: -moz-repeating-radial-gradient(
+   background: conic-gradient(
      $silverMain,
      $silver2,
      $silver3,
