@@ -24,21 +24,15 @@ $silverTest: black;
    /* background-color: #282c34;*/
 
     /*FOR SILVER, TESTING*/
-   background: linear-gradient(
-     0deg, 
+   background: -moz-repeating-radial-gradient(
      $silverMain,
      $silver2,
      $silver3,
      $silver4, 
      $silver5,
      $silverTest);
+ 
 
-   /*  filter: blur(.5rem);*/
-
-     border-radius: inherit;
-
-      content: "";
-      inset: -.5rem;
 
       /*FOR SILVER, TESTING*/
 

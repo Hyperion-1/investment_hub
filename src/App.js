@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.scss';
 
-import Silver from './components/silver';
+import Silver from './components/Silver';
 
 function App() {
   return (
@@ -11,6 +11,8 @@ function App() {
 
       </header>
 
+
+      <br></br>
       <Silver />
 
 
