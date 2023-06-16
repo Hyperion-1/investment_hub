@@ -1,0 +1,109 @@
+$silverMain: silver;
+$silver2: rgb(169, 166, 166);
+$silver3: rgb(144, 142, 142);
+$silver4: rgb(135, 134, 134);
+$silver5: rgb(108, 108, 108);
+$silverTest: black;
+
+.App{
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+   /* background-color: #282c34;*/
+
+    /*FOR SILVER, TESTING*/
+   background: linear-gradient(
+     0deg, 
+     $silverMain,
+     $silver2,
+     $silver3,
+     $silver4, 
+     $silver5,
+     $silverTest);
+
+   /*  filter: blur(.5rem);*/
+
+     border-radius: inherit;
+
+      content: "";
+      inset: -.5rem;
+
+      /*FOR SILVER, TESTING*/
+
+
+
+
+
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2min);
+    color: white;
+    
+  }
+
+  .App-header::before, .App-header::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+
+    background-size: 400%;
+
+    z-index: -1;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+
+    animation: animate 20s linear infinite;
+
+  }
+
+  .App-header::after{
+    filter: blur(40rem);
+  }
+
+
+  @keyframes animate {
+    0%{
+      background-position: 0 0;
+    }
+    50%{
+      background-position: 400% 0;
+    }
+    100%{
+      background-position: 0 0;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
